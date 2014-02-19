@@ -84,6 +84,7 @@
 	}
 	@font-face {
 
+		/* added these fonts */
 		font-family: dumb-font;
 		src: url( fonts/woff/2dumb.woff);
 	}
