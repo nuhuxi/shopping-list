@@ -1,0 +1,82 @@
+	body{
+		width:100%; 
+		text-align:center; 
+		margin: 10 auto -4em;
+	}
+
+	#main{
+		margin: 0 auto -4em;
+		width:800px;
+		height: 800px;
+		font-size: 36px;
+		color: black;
+		padding-top:25px;
+		font-family: cursive;
+
+	}
+
+	#topoflist{
+		padding-bottom: 20px;
+
+		margin-left: 25%;
+		margin-bottom: 10px;
+		font-size: 30px;
+		height: 70px;
+		width: 50%;
+		color:black;
+		text-align: center;
+		vertical-align: middle;
+		background-image: url("images/CC6666.png");
+	}
+
+	.thingswewant{
+		display: block;
+		padding-top: 20px;
+		margin-left: 25%;
+		height: 40px;
+		width: 400px;
+		color:gray;
+		text-align: center;
+		background-color: white;
+	}
+
+	.anitem {
+		display: block;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		border-bottom: 3px solid #D8D8D8;
+		height: 40px;
+		width: 50%;
+		min-width: 100px;
+		color:gray;
+		text-align: center;
+		margin-left: 25%;
+		margin-top:5px;
+		border-radius: 5px;
+		background-color: white;
+	}
+
+	.bottomoflist{
+		padding-bottom: 20px;
+		padding-top: 20px;
+		margin-top:40px;
+		margin-left: 25%;
+		height: 60px;
+		width: 50%;
+		color:black;
+		text-align: center;
+		vertical-align: middle;
+		font-size: 18px;
+		background-image: url("images/CC6666.png");
+
+	}
+	.checkbox {
+		display: inline-block;
+		float:left;
+		margin-left: 10px;
+	}
+	.buythis {
+			display:inline-block;
+			text-align:center;
+
+	}
