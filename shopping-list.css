@@ -61,7 +61,7 @@
 		padding-top: 20px;
 		margin-top:40px;
 		margin-left: 25%;
-		height: 60px;
+		height: 90px;
 		width: 50%;
 		color:black;
 		text-align: center;
@@ -85,5 +85,5 @@
 	@font-face {
 
 		font-family: dumb-font;
-		src: url( fonts/2dumb.ttf);
+		src: url( fonts/woff/2dumb.woff);
 	}
