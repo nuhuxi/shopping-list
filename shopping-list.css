@@ -11,7 +11,7 @@
 		font-size: 36px;
 		color: black;
 		padding-top:25px;
-		font-family: cursive;
+		font-family: dumb-font;
 
 	}
 
@@ -80,4 +80,10 @@
 			display:inline-block;
 			text-align:center;
 
+
+	}
+	@font-face {
+
+		font-family: dumb-font;
+		src: url( fonts/2dumb.ttf);
 	}
