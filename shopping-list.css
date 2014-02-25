@@ -8,7 +8,7 @@
 		margin: 0 auto -4em;
 		width:800px;
 		height: 800px;
-		font-size: 30px;
+		font-size: 24px;
 		color: black;
 
 		font-family: scrawl-font;
@@ -29,7 +29,7 @@
 		display:inline-block;
 		text-align:left;
 		font-family:scrawl-font;
-		font-size: 30px;
+		font-size: 24px;
 		padding-top: -50px;
 	}
 	.input {
