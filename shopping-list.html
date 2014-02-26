@@ -3,23 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
-	<link type="text/css" rel="stylesheet" href="shopping-list.css"/>
+	<link type="text/css" rel="stylesheet" href="css/shopping-list.css"/>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/shopping-list.js"></script>
 
 </head>
 <body>
 		<div id="main">
-		<div id="headline">Shopping List</div>
-		<input type="addtolist" class="textarea" placeholder="add to the list" autofocus="">
+			<div id="headline">Shopping List</div>
+			<form id="additem">
+				<input type="text" id="additeminput" placeholder="add to the list" autofocus="">
+				<input type="submit" id="addbutton" value="add it!">
+			</form>
 
-		<ol>
-			<li>apples <img src="images/small-trash-can.png" alt="trashcan"/></li>
-			<li>oranges <img src="images/small-trash-can.png" alt="trashcan"/></li>
-			<li>bananas <img src="images/small-trash-can.png" alt="trashcan"/></li>
-			<li>potatoes <img src="images/small-trash-can.png" alt="trashcan"/></li>
-			<li>peanut butter <img src="images/small-trash-can.png" alt="trashcan"/></li>
-			<li>kale (yuck!) <img src="images/small-trash-can.png" alt="trashcan"/></li>
-			<li>milk <img src="images/small-trash-can.png" alt="trashcan"/></li>
-		</ol>
+		<!--	<ol>
+				<li>apples <img src="images/small-trash-can.png" alt="trashcan"/></li>
+				<li>oranges <img src="images/small-trash-can.png" alt="trashcan"/></li>
+				<li>bananas <img src="images/small-trash-can.png" alt="trashcan"/></li>
+				<li>potatoes <img src="images/small-trash-can.png" alt="trashcan"/></li>
+				<li>peanut butter <img src="images/small-trash-can.png" alt="trashcan"/></li>
+				<li>kale (yuck!) <img src="images/small-trash-can.png" alt="trashcan"/></li>
+				<li>milk <img src="images/small-trash-can.png" alt="trashcan"/></li>
+			</ol> -->
 		</div>
 
 </body>
