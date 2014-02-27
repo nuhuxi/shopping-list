@@ -12,7 +12,7 @@
 		color: black;
 
 		font-family: scrawl-font;
-		background-image: url("../images/free-paper-texture-13-with-red-dot.png");
+		background-image: url("../images/free-paper-texture-13-no-dumpster.png");
 		background-repeat: no-repeat;
 		text-align: left;
 		padding-left: 100px;
@@ -32,12 +32,12 @@
 		text-align:left;
 		font-family:scrawl-font;
 		font-size: 24px;
-		padding-top: -50px;
+		padding-top: -45px;
 	}
 	#small-dumpster{
-		outline: 2px red solid;
-		display: inline-block;
-		margin-left: 300px;
+		position: absolute;
+		margin-left: 380px;
+		margin-top: -100px;
 
 
 	}
