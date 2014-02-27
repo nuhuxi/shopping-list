@@ -12,8 +12,8 @@ $(document).ready(function() {
     $(document).keydown(function(event) {
       var addthisitem = $("#additeminput").val();
       if (event.keyCode === 13) { 
-        alert(addthisitem);        
-      })
+        alert(addthisitem);}      
+    })
 
 
 
