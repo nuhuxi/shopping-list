@@ -1,18 +1,19 @@
 $(document).ready(function() {
 // these statements tell us the "state" of the user
-    $("#addbutton").mousedown(function() {
+    $("#addbutton").mouseup(function() {
       var addthisitem = $("#additeminput").val();
-      alert(addthisitem);
-      addanitemtothelist(addthisitem);
+        $("#thelist").append("<li> item from add</li>");
     })
-    $("#small-dumpster").mousedown(function() {
+    $("#small-dumpster").mouseup(function() {
       var addthisitem = $("#additeminput").val();
       alert("Dumpster!");
     })
-    $(document).keydown(function(event) {
+    $(document).keyup(function(event) {
       var addthisitem = $("#additeminput").val();
       if (event.keyCode === 13) { 
-        alert(addthisitem);}      
+        $("#thelist").append("<li> item from enter</li>");
+
+        }      
     })
 
 
