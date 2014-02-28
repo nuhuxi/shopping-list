@@ -19,8 +19,8 @@ $(document).ready(function() {
   
     });
 
-    $("#deletethisitem").mouseup(function() {
-      alert("Hello world!");
+    $("#delete-this-item").mouseup(function() {
+      alert("Trash can clicked");
     });
 
     $('form').submit(function(e){ e.preventDefault(); 
@@ -35,7 +35,7 @@ function userwantstoAdd() {
       newelement = 
           "<li>"
           +addthisitem
-          +"  <img id='deletethisitem' src='images/small-trash-can.png' alt='trashcan'/></li>"; 
+          +"  <img id='delete-this-item' src='images/small-trash-can.png' alt='trashcan'/></li>"; 
       $("#thelist").append(newelement); 
       $("#additeminput").val("");
       numitemsinlist++;

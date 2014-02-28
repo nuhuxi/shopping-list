@@ -38,6 +38,10 @@
 		padding-top: -45px;
 		
 	}
+	#delete-this-item{
+		cursor: pointer;
+
+	}
 	#small-dumpster{
 		position: absolute;
 		margin-left: 60px;
