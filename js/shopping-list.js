@@ -12,11 +12,10 @@ $(document).ready(function() {
       var addthisitem = $("#additeminput").val();
       if (event.keyCode === 13) {
 		  var newelement = "<li>"+addthisitem+"</li>"; 
-		  alert(newelement);
-       /* $("#thelist").append(newelement); */
-
+      $("#thelist").append(newelement); 
         }      
     })
+    $('form').submit(function(e){ e.preventDefault(); });
 
 
 
