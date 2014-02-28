@@ -10,8 +10,10 @@ $(document).ready(function() {
     })
     $(document).keyup(function(event) {
       var addthisitem = $("#additeminput").val();
-      if (event.keyCode === 13) { 
-        $("#thelist").append("<li> item from enter</li>");
+      if (event.keyCode === 13) {
+		  var newelement = "<li>"+addthisitem+"</li>"; 
+		  alert(newelement);
+       /* $("#thelist").append(newelement); */
 
         }      
     })
