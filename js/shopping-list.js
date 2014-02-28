@@ -11,12 +11,13 @@ $(document).ready(function() {
     $(document).keyup(function(event) {
       var addthisitem = $("#additeminput").val();
       if (event.keyCode === 13) {
-		  var newelement = "<li>"+addthisitem+"</li>"; 
-		  alert(newelement);
-       /* $("#thelist").append(newelement); */
-
+		var newelement = "<li>"+addthisitem+"   <img src='images/small-trash-can.png' alt='trashcan'/></li>"; 
+      	$("#thelist").append(newelement); 
+		addthisitem="";
+		$("#additeminput").val("");
         }      
     })
+    $('form').submit(function(e){ e.preventDefault(); });
 
 
 
