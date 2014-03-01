@@ -19,8 +19,11 @@ $(document).ready(function() {
   
     });
 
-    $("#delete-this-item").mouseup(function() {
-      alert("Trash can clicked");
+    $("#thelist").on('click', 'li', function() {
+      $(this).slideUp();
+      $(this).remove();
+      numitemsinlist = numitemsinlist - 1;
+      console.log(this); 
     });
 
     $('form').submit(function(e){ e.preventDefault(); 
@@ -33,9 +36,11 @@ function userwantstoAdd() {
   if(numitemsinlist<8) {
       addthisitem = $("#additeminput").val();
       newelement = 
-          "<li>"
+          "<li id='list-item-number"
+          +numitemsinlist
+          +"' >"
           +addthisitem
-          +"  <img id='delete-this-item' src='images/small-trash-can.png' alt='trashcan'/></li>"; 
+          +"  <img src='images/small-trash-can.png' alt='trashcan'/></li>"; 
       $("#thelist").append(newelement); 
       $("#additeminput").val("");
       numitemsinlist++;
