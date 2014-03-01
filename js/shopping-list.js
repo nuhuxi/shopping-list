@@ -8,6 +8,8 @@ $(document).ready(function() {
 // these statements tell us the "state" of the user
     $("#addbutton").mouseup(function() {
       addbuttonclicked="true";
+      console.log("add button clicked");
+      console.log(numitemsinlist);
 		  userwantstoAdd();
     });
     $("#small-dumpster").mouseup(function() {
@@ -19,9 +21,13 @@ $(document).ready(function() {
   
     });
 
-    $("#thelist").on('click', $(this), function() {
-      console.log($this); 
+    $("#thelist").on('click', 'li', function() { 
+          var theparent = $(this).parent();
+          theparent.remove();
+          numitemsinlist = numitemsinlist-1;
+          console.log(numitemsinlist);
     });
+    
 
     $('form').submit(function(e){ e.preventDefault(); 
     });
@@ -33,11 +39,14 @@ function userwantstoAdd() {
   if(numitemsinlist<8) {
       addthisitem = $("#additeminput").val();
       newelement = 
-          "<li id='trashcannumber"
+          "<li id='itemnumber"
           +numitemsinlist
-          +"' >"
+          +"'>" 
           +addthisitem
-          +"  <img id='delete-this-item' src='images/small-trash-can.png' alt='trashcan'/></li>"; 
+          +"  <img id='trashcannumber"
+          +numitemsinlist
+          +"' src='images/small-trash-can.png' alt='trashcan'/></li>"; 
+
       $("#thelist").append(newelement); 
       $("#additeminput").val("");
       numitemsinlist++;
