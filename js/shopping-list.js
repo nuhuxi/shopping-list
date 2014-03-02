@@ -20,10 +20,11 @@ $(document).ready(function() {
     });
 
     $("#thelist").on('click', 'li', function() {
-      $(this).slideUp();
-      $(this).remove();
+      $(this).slideUp("slow", function(){
+          $(this).remove();
+          });
       numitemsinlist = numitemsinlist - 1;
-      console.log(this); 
+
     });
 
     $('form').submit(function(e){ e.preventDefault(); 
@@ -40,7 +41,7 @@ function userwantstoAdd() {
           +numitemsinlist
           +"' >"
           +addthisitem
-          +"  <img src='images/small-trash-can.png' alt='trashcan'/></li>"; 
+          +"  <img id='delete-this-item' src='images/small-trash-can.png' alt='trashcan'/></li>"; 
       $("#thelist").append(newelement); 
       $("#additeminput").val("");
       numitemsinlist++;
@@ -51,7 +52,10 @@ function userwantstoAdd() {
     }
   };
 function removeAll() {
-  $("#thelist").empty();
+  $("#thelist").slideUp("slow", function(){
+    $("#thelist").empty();
+    $("#thelist").slideDown();
+  });
   numitemsinlist = 1;
 
 }
