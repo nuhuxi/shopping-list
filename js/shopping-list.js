@@ -19,9 +19,10 @@ $(document).ready(function() {
   
     });
 
-    $("#thelist").on('click', 'li', function() {
-      $(this).slideUp("slow", function(){
-          $(this).remove();
+    $("#thelist").on('click', 'img', function() {
+      var itemToBeDeleted = $(this).parent()[0].id;
+      $('#'+itemToBeDeleted).slideUp("slow", function(){
+          $('#'+itemToBeDeleted).remove();
           });
       numitemsinlist = numitemsinlist - 1;
 
@@ -45,9 +46,8 @@ function userwantstoAdd() {
       $("#thelist").append(newelement); 
       $("#additeminput").val("");
       numitemsinlist++;
-  }
-   else  {
-    alert("Sorry. You can only put 7 items in the list.");	
+  } else  {
+      alert("Sorry. You can only put 7 items in the list.");	
           $("#additeminput").val("");
     }
   };
